@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSSUT Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- --------HEADER------- -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="vssut_LOGO2.png" alt=""></a>
+            <div class="nav-link" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                   
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Program For 2022</h1>
+    </section>
+
+    <!-- -----------Blog Page content----------- -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="certificate.jpg" alt="">
+                <h2>Our Certificate & Online Program For 2022</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum dolores maiores, fugiat aut deserunt placeat repudiandae saepe unde enim. Aspernatur eum suscipit est. Non velit officiis repudiandae corporis eligendi!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eum dolorum maxime! Reprehenderit sed ratione ullam? Soluta facere repellendus debitis fuga alias tempora tenetur laboriosam quae! Sunt nam sint eaque?</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta incidunt inventore ex debitis unde odio obcaecati doloribus dicta exercitationem aliquid facere ratione veritatis sequi repellat officia fugit voluptatum, eaque fugiat corrupti id beatae quo! Expedita amet ullam obcaecati fugit omnis quod molestiae, reprehenderit pariatur deserunt voluptas doloremque consequatur eos labore.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt possimus, enim atque perferendis illo, officiis quidem nisi, quas praesentium magnam minus natus quaerat tempore. Nesciunt dicta minima quam nulla fuga?</p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea  rows="10" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    
+        
+
+
+       <!-- -----------Footer-------- -->
+       <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eos molestias eaque est consectetur dolorem error corrupti! Perspiciatis architecto qui corrupti.</p>
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i>by Easy Tutorials</p>
+
+   
+       </section>
+       
+
+
+
+
+
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+    
+</body>
+</html>
