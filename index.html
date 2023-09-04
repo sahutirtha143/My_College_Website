@@ -32,7 +32,7 @@
         <nav class="all-flex">
             <a href="index.html"><img src="img/home/vssut_LOGO2.png" alt=""></a>
             <div class="nav-link" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <i class="fa fa-times" id="times" aria-hidden="true" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -41,7 +41,7 @@
                     <div id="account-btn" class="fas fa-user"></div>
                 </ul>
             </div>
-            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+            <i class="fa fa-bars" id="bars" aria-hidden="true" onclick="showMenu()"></i>
         </nav>
 
         <div class="all-flex college">
@@ -78,17 +78,18 @@
                     <label for="remember-me">remember me</label>
                     <a href="#">forgot password?</a>
                 </div>
+                <div class="in-out">
                 <input type="submit" value="login now" class="btn">
+                <input type="submit" value="logout now" class="btn">
+                </div>
+                
             </form>
-
 
             <form action="" class="register-form">
                 <h3>regester now</h3>
                 <input type="email" placeholder="enter your email" class="box">
                 <input type="password" placeholder="enter your password" class="box">
                 <input type="password" placeholder="confirm your password" class="box">
-
-
                 <input type="submit" value="register now" class="btn">
             </form>
         </div>
@@ -311,13 +312,18 @@
 
     <script>
         var navLinks = document.getElementById("navLinks");
-
+        var time=document.getElementById('times');
+        var bar=document.getElementById('bars');
         function showMenu() {
-            navLinks.style.right = "0";
+            // navLinks.style.right = "0";
+            bar.classList.toggle('hide-bar');
+            navLinks.classList.add('active-bar');
         }
 
         function hideMenu() {
-            navLinks.style.right = "-200px";
+            // navLinks.style.right = "-100%";
+            bar.classList.remove('hide-bar');
+            navLinks.classList.remove('active-bar');
         }
     </script>
 
@@ -325,6 +331,7 @@
     <script>
         var regester = document.querySelector('.account-form .regester-btn');
         var login = document.querySelector('.account-form .login-btn');
+
         regester.onclick = () => {
             regester.classList.add('active');
             login.classList.remove('active');
@@ -340,18 +347,17 @@
         }
 
         var accountform = document.querySelector('.account-form ');
-        var user = document.querySelector('#account-btn')
+        var user = document.querySelector('#account-btn');
         user.onclick = () => {
             user.classList.toggle('hide');
-
             accountform.classList.add('active');
-
         }
         document.querySelector('#close-btn').onclick = () => {
             user.classList.remove('hide');
             accountform.classList.remove('active');
         }
     </script>
+
 
 
 
