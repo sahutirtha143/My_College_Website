@@ -368,7 +368,7 @@ form h3 {
     display: flex;
     align-items: center;
     gap: 0.4em;
- 
+
 }
 
 label {
@@ -392,7 +392,7 @@ a:hover {
 
 .btn {
     width: 65%;
-    margin:1rem 0 0 2rem;
+    margin: 1rem 0 0 2rem;
     padding: 2px 2rem;
     text-align: center;
     font-size: 1.7rem;
@@ -404,13 +404,15 @@ a:hover {
     border: none;
     transition: transform .2s;
 }
-.in-out{
+
+.in-out {
     margin-left: 1.5rem;
-    width:80%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .btn:hover {
     transform: scale(1.1);
     color: #fff;
@@ -461,20 +463,23 @@ a:hover {
         box-shadow: 0 1rem 1rem black;
         /* border-top: none; */
     }
+
     .button {
-       display: flex;
-       justify-content: center;
+        display: flex;
+        justify-content: center;
     }
-    .in-out{
+
+    .in-out {
         width: 100%;
-        position:relative;
+        position: relative;
         right: 3.5rem;
-    display: block;
-}
-.in-out .btn{
-  width: 100%;
-}
-    
+        display: block;
+    }
+
+    .in-out .btn {
+        width: 100%;
+    }
+
 }
 
 /* ---------------------------END ACCOUNT FORM SECTION DESIGN---------------------------- */
