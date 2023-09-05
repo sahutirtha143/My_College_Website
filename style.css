@@ -20,6 +20,13 @@ body {
     }
 }
 
+@media (max-width:360px) {
+    body {
+        overflow-x: hidden;
+
+    }
+}
+
 .header {
     width: 100%;
 }
@@ -271,6 +278,56 @@ nav .fa {
 
 }
 
+@media(max-width:480px) {
+    nav {
+        width: 100%;
+        height: 7vh;
+    }
+
+    .text-box h1 {
+        font-size: 15px;
+    }
+
+    .text-box h3 {
+        font-size: 8px;
+    }
+
+    .active-bar {
+        right: 0;
+    }
+
+    .hide-bar {
+        display: none;
+    }
+
+    .header .college {
+        width: 100%;
+        margin-top: 6vh;
+        width: 100%;
+        min-height: 5.5vh;
+    }
+
+    .header .college img {
+        width: 100%;
+    }
+
+    .header .home-img {
+        min-width: 100vw;
+        min-height: 18vh;
+        overflow: hidden;
+    }
+
+    .text-box .hero-btn {
+        width: 200px;
+        margin-bottom: 800px;
+        padding: 5px 18px;
+        position: relative;
+        top: -9.5rem;
+        left: 1rem;
+    }
+
+}
+
 /* ----------------------------------END OF HEADER SECTION--------------------------------------- */
 
 /* ----ACCOUNT FORM SECTION DESIGN---- */
@@ -443,7 +500,7 @@ a:hover {
         right: 10px;
         z-index: 120;
         margin: 0 auto;
-        background: red;
+        background: rgba(231, 238, 239, 0.4);
         display: none;
         top: 0;
         height: 100vh;
@@ -478,6 +535,46 @@ a:hover {
 
     .in-out .btn {
         width: 100%;
+    }
+
+}
+
+@media(max-width:480px) {
+    .account-form {
+        position: fixed;
+        width: 100%;
+        right: 10px;
+        z-index: 120;
+        margin: 0 auto;
+        background: rgba(231, 238, 239, 1);
+        display: none;
+        top: 0;
+        height: 100vh;
+    }
+
+    .active {
+        right: 0;
+        display: block;
+    }
+
+    .main-bcg {
+        width: 100%;
+        height: 85%;
+        display: block;
+        margin: 2rem auto;
+        background-color: #FFFFFF;
+        box-shadow: 0 1rem 1rem black;
+        /* border-top: none; */
+    }
+
+    .button {
+        display: block;
+    }
+
+    .button .login-btn {
+        position: relative;
+        left: 2.3rem;
+        margin-bottom: 1rem
     }
 
 }
@@ -584,6 +681,27 @@ section {
 
     .course-col {
         width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:480px) {
+    .heading-h2 {
+        font-size: 30px;
+    }
+
+    .heading-para {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .course-col {
+        width: 85%;
         margin-top: 1rem;
     }
 }
@@ -701,6 +819,36 @@ section {
     }
 }
 
+@media(max-width:480px) {
+    .campus-col {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .campus1 h2 {
+        font-size: 33px;
+    }
+
+    .campus1 p {
+        font-size: 15px;
+    }
+
+    .campus-col img {
+        margin-left: 0.1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+    .heading-h2 {
+        font-size: 30px;
+    }
+
+    .heading-para {
+        font-size: 12px;
+    }
+}
+
 /* -------------------------------END OF CAMPUS SECTION------------------------------- */
 
 
@@ -782,6 +930,28 @@ section {
     .facilities-col p span {
         margin-left: 10rem;
         margin-top: 1rem;
+    }
+}
+
+@media(max-width:768px) {
+
+    .facilities h2 {
+        font-size: 35px;
+    }
+
+    .facilities p {
+        font-size: 15px;
+
+    }
+
+    .facilities-col {
+        width: 86%;
+        text-align: center;
+        margin-left: 0.5rem;
+    }
+
+    .facilities-col img {
+        width: 90%;
     }
 }
 
@@ -880,6 +1050,30 @@ section {
 
 }
 
+@media(max-width:480px) {
+    .testimonials {
+        width: 98%;
+
+    }
+
+    .testimonials h2 {
+        font-size: 35px;
+    }
+
+    .testimonials p {
+        font-size: 15px;
+    }
+
+    .testimonial-col {
+        padding-top: 5px;
+        margin-top: 15px;
+        width: 90%;
+        margin-bottom: 10px;
+
+    }
+
+}
+
 /* -------------------------END OF TESIMONIAL SECTION-------------------------------- */
 
 /* ---------CALL TO ACTION------- */
@@ -928,6 +1122,26 @@ section {
 
     .cta .hero-btn {
         padding: 15px 50px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .cta {
+        width: 90%;
+        height: 25vh;
+    }
+
+    .cta h2 {
+        font-size: 20px;
+        position: relative;
+        top: -2rem;
+    }
+
+    .cta .hero-btn {
+        padding: 12px 40px;
+        position: relative;
+        top: -2rem;
     }
 
 }
@@ -1087,6 +1301,22 @@ section {
         text-align: left;
     }
 
+    .box-container1 h3 {
+        width: 100%;
+        display: inline-flex;
+        justify-content: left;
+    }
+
+    .box-container1 .para {
+        text-align: left;
+    }
+
+    .box-container1 h3:hover::after {
+        width: 0;
+    }
+}
+
+@media(max-width:480px) {
     .box-container1 h3 {
         width: 100%;
         display: inline-flex;
