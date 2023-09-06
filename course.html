@@ -28,13 +28,13 @@
     <!-- <link rel="stylesheet" href="course.css"> -->
 </head>
 
-<body style="overflow: hidden;">
+<body>
     <!-- --------HEADER------- -->
-    <section class="header">
+    <section class="header" id="cou">
         <nav class="all-flex">
             <a href="index.html"><img src="img/vssut_LOGO2.png" alt=""></a>
             <div class="nav-link" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <i class="fa fa-times" id="times" aria-hidden="true" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -42,14 +42,14 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+            <i class="fa fa-bars" id="bars"  aria-hidden="true" onclick="showMenu()"></i>
         </nav>
 
         <div class="main-heading">
             <h1 class="heading-h1">Our Academic</h1>
         </div>
     </section>
-    <div class="about-imgg">
+    <div class="about-imgg" id="couImg">
         <img src="img/academic/background.jpg" alt="">
     </div>
 
@@ -607,21 +607,22 @@
     </script>
 
 
+<script>
+    var navLinks = document.getElementById("navLinks");
+    var time=document.getElementById('times');
+    var bar=document.getElementById('bars');
+    function showMenu() {
+        // navLinks.style.right = "0";
+        bar.classList.toggle('hide-bar');
+        navLinks.classList.add('active-bar');
+    }
 
-
-
-
-    <script>
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script>
+    function hideMenu() {
+        // navLinks.style.right = "-100%";
+        bar.classList.remove('hide-bar');
+        navLinks.classList.remove('active-bar');
+    }
+</script>
 
 </body>
 
